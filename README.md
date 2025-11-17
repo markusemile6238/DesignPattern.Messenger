@@ -3,15 +3,15 @@
 Une petite etude de cas sur le singleton a travers un petit exemple de messagerie.
 
 * Emploi d'instance unique (singleton).
-* Une class <span style="color:green">**MyMessenger**</span> et ses <span style="color:blue">_methodes_</span> 
-    * Un <span style="color:blue">**Register**</span>
+* Une class $${\color{green}MyMessenger}$$ et ses $${\color{blue}methodes}$$ 
+    * Un $${\color{blue}Register}$$
         * broadcast 
         * private
-    * Le <span style="color:blue">**UnRegister**</span> unique.
-    * Le <span style="color:blue">**SendMessage**</span> selon le Register
+    * Le $${\color{blue}UnRegister}$$  unique.
+    * Le $${\color{blue}SendMessage}$$  selon le Register
         * En Broadcast
         * Ou en salle privée
-    * Une fonction <span style="color:blue">**GetUserName**</span> qui va nous permettre de retrouver le nom <br>
+    * Une fonction $${\color{blue}GetUserName}$$  qui va nous permettre de retrouver le nom <br>
     des utilisateurs grâce a leur reference ID
     #
 
@@ -19,16 +19,16 @@ Une petite etude de cas sur le singleton a travers un petit exemple de messageri
     >>L'emploie de lock pour securisier les données et empêcher les autres thread.
     
 
-* Une Class <span style="color:green">**Person**</span>
+* Une Class $${\color{green}Person}$$
     * avec deux variables {Nom , Id}
         * Id est realiser grace a
         ```
          cli"+Random.Shared.Next(1000, 10000000).ToString()
         ```
-    * On delegate la fonction <span style="color:blue">**Receive**</span> de chaque person 
+    * On delegate la fonction $${\color{blue}Receive}$$ de chaque person 
 
-    * On creer la fonction <span style="color:blue">**Receive**</span>
-    * On créer la fonction <span style="color:blue">**SendMessage**</span>    
+    * On creer la fonction $${\color{blue}Receive**}$$
+    * On créer la fonction $${\color{blue}SendMessage}$$   
 
 >## Au final on test notre petite application
 ```
@@ -45,3 +45,6 @@ albert.SendMessage(message: "Ah oui tous pour Magalie", idFriend: idMagalie);
 et on obtient
 
 ![This is an alt text.](./output.png "Résultat")
+
+## Conclusion
+Je sais que max reçois son propre message mais c'est dans l'optique d'un chat, et donc vous revecez bien votre message aussi ;)
